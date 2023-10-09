@@ -66,7 +66,7 @@ export default function Header(){
                     <ul className="header__navigation__list">
                         {navigation.map((item, index)=>{
                             return(
-                                <li className="header__navigation-item" onClick={gamburgerHeandler}>
+                                <li className="header__navigation-item" onClick={gamburgerHeandler} key={index}>
                                     <NavLink href={item.href} title={item.title}/>
                                 </li>
                             )
